@@ -1,5 +1,6 @@
 # hdns: A Go library for the Hetzner DNS API
 
+[![GitHub Actions status](https://github.com/Estivador/hdns-go/workflows/Continuous%20Integration/badge.svg)](https://github.com/Estivador/hdns-go/actions)
 [![GoDoc](https://godoc.org/github.com/Estivador/hdns-go/hdns?status.svg)](https://godoc.org/github.com/Estivador/hdns-go/hdns)
 
 Package `hdns` is a library for the Hetzner DNS API.
