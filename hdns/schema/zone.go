@@ -43,8 +43,18 @@ type ZoneCreateRequest struct {
 	TTL  uint64 `json:"ttl"`
 }
 
+// ZoneCreateResponse defines the schema of the response for zone creation.
+type ZoneCreateResponse struct {
+	Zone Zone `json:"zone"`
+}
+
 // ZoneUpdateRequest defines the schema of the request to update a zone.
 type ZoneUpdateRequest struct {
 	Name string `json:"name"`
 	TTL  uint64 `json:"ttl"`
+}
+
+// ZoneUpdateResponse defines the schema of the response for zone update.
+type ZoneUpdateResponse struct {
+	Zone Zone `json:"zone"`
 }
