@@ -8,7 +8,7 @@ type Zone struct {
 	ID              string          `json:"id"`
 	Created         time.Time       `json:"created"`
 	Modified        time.Time       `json:"modified"`
-	LegacyDnsHost   string          `json:"legacy_dns_host"`
+	LegacyDNSHost   string          `json:"legacy_dns_host"`
 	LegacyNs        []string        `json:"legacy_ns"`
 	Name            string          `json:"name"`
 	Ns              []string        `json:"ns"`
@@ -18,10 +18,10 @@ type Zone struct {
 	Project         string          `json:"project"`
 	Registrar       string          `json:"registrar"`
 	Status          string          `json:"status"`
-	Ttl             uint64          `json:"ttl"`
+	TTL             uint64          `json:"ttl"`
 	Verified        time.Time       `json:"verified"`
 	RecordsCount    uint64          `json:"records_count"`
-	IsSecondaryDns  bool            `json:"is_sedondary_dns"`
+	IsSecondaryDNS  bool            `json:"is_sedondary_dns"`
 	TxtVerification TxtVerification `json:"txt_verification"`
 }
 
