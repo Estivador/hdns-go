@@ -12,10 +12,11 @@ type Zone struct {
 	LegacyNs        []string        `json:"legacy_ns"`
 	Name            string          `json:"name"`
 	Ns              []string        `json:"ns"`
-	Status          string          `json:"status"`
 	Owner           string          `json:"owner"`
 	Paused          bool            `json:"paused"`
 	Permission      string          `json:"permission"`
+	Project         string          `json:"project"`
+	Registrar       string          `json:"registrar"`
 	Status          string          `json:"status"`
 	Ttl             uint64          `json:"ttl"`
 	Verified        time.Time       `json:"verified"`
