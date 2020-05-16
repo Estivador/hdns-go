@@ -25,7 +25,26 @@ type Zone struct {
 	TxtVerification TxtVerification `json:"txt_verification"`
 }
 
-// ZoneResponse defines the schema of a response containing zone information.
-type ZoneResponse struct {
+// ZoneGetResponse defines the schema of the response when retrieving
+// a single zone.
+type ZoneGetResponse struct {
 	Zone Zone `json:"zone"`
+}
+
+// ZoneListResponse defines the schema of the response when listing
+// zones.
+type ZoneListResponse struct {
+	Zones []Zone `json:"zones"`
+}
+
+// ZoneCreateRequest defines the schema of the request to create a zone.
+type ZoneCreateRequest struct {
+	Name string `json:"name"`
+	TTL  uint64 `json:"ttl"`
+}
+
+// ZoneUpdateRequest defines the schema of the request to update a zone.
+type ZoneUpdateRequest struct {
+	Name string `json:"name"`
+	TTL  uint64 `json:"ttl"`
 }
