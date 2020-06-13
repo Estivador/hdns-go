@@ -1,5 +1,5 @@
 #!/bin/bash -e
-cd hcloud
+cd hdns
 diff -u <(echo -n) <(gofmt -d -s .)
 go vet ./...
 golint -set_exit_status ./...

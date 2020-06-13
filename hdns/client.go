@@ -140,7 +140,7 @@ func (c *Client) NewRequest(ctx context.Context, method, path string, body io.Re
 		return nil, err
 	}
 	req.Header.Set("User-Agent", c.userAgent)
-	req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", c.token))
+	req.Header.Set("Auth-API-Token", fmt.Sprintf("%s", c.token))
 	if body != nil {
 		req.Header.Set("Content-Type", "application/json")
 	}
